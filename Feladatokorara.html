@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+    <p>Az A ennyivel kisseb a kerület felénél</p>
+   <p id="anakfele"></p>
+   <br>
+   <p>Az B ennyivel kisseb a kerület felénél</p>
+   <p id="benekfele"></p>
+   <br>
+   <p>Az C ennyivel kisseb a kerület felénél</p>
+   <p id="cenekfele"></p>
+    
+<script>
+var a = parseInt(prompt("A oldal"))
+var b = parseInt(prompt("B oldal"))
+var c = parseInt(prompt("C oldal"))
+    kerulet = (a+b+c)
+    keruletfele = (kerulet/2)
+
+afele = keruletfele-a
+bfele = keruletfele-b
+cfele = keruletfele-c
+
+document.getElementById('anakfele').innerHTML = afele
+document.getElementById('benekfele').innerHTML = bfele
+document.getElementById('cenekfele').innerHTML = cfele
+
+</script>
+
+
+</body>
+</html>
