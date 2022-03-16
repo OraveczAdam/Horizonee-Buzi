@@ -32,6 +32,24 @@ document.getElementById('benekfele').innerHTML = bfele
 document.getElementById('cenekfele').innerHTML = cfele
 
 </script>
+<h1>10.Feladat</h1>
+
+<input type="number" required placeholder="Szám" id="szok">
+<button onclick="osztas(szok.value)">OK</button>
+<br>
+<p id="szokoev"></p>
+<script>
+    
+
+function osztas(szok) {
+  sz = Math.trunc(Number(szok))/4 
+  document.getElementById('szokoev').innerHTML = sz
+}
+
+</script>
+
+
+
 
 
 </body>
